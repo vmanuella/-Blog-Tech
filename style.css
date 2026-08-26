@@ -1,6 +1,10 @@
-body {
+header{
+    background-color: #89BDD2;
+    color: #183C63;
 
+}
 
-
-    
+main{
+   background-color: #ffffff ;
+   color: #183C63
 }
