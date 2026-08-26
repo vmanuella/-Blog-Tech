@@ -6,9 +6,17 @@ header{
     margin: 0 auto;
     border-radius: 20px;
     backdrop-filter: blur(16px);
-    border: 1px solid rgba(255,255,255,0.2)
-    
+    border: 1px solid rgba(32, 15, 15, 0.2)
+
 }
+
+.btn3::before{
+    transform:skewX(-30deg);
+}
+.btn3:hover::before{
+    left:100%
+}
+
 
 main{
    background-color: #ffffff ;
