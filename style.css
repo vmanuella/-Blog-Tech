@@ -36,20 +36,18 @@ main{
     height: 20px;
 }
 
-button{
-    width: 100px;
-    height: 50px;
-    padding: 10px;
-    border: 5px solid #183C63;
-    border-radius: 30px;
-    margin: 0;
 button {
+  width: 100px;
+  height: 50px;
+  padding: 10px;
+  border: 5px solid #183C63;
+  border-radius: 30px;
+  margin: 0;
   transition-duration: 0.4s;
 }
 
 button:hover {
-  background-color: #4CAF50; /* Green */
-  color: rgb(245, 0, 0);
-}
-button:hover {box-shadow:0 8px 16px 0 rgba(0,0,0,0.6)}
+  background-color: #4CAF50; /* Verde */
+  color: rgb(245, 0, 0);      /* Vermelho */
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
 }
