@@ -20,7 +20,7 @@ main{
    display: flex;
 }
 
-p{
+div p{
     font-weight: bold;
 }
 
