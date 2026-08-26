@@ -37,20 +37,20 @@ main{
 }
 
 button{
-    width: 55px;
+    width: 100px;
     height: 50px;
     padding: 10px;
     border: 5px solid #183C63;
     border-radius: 30px;
     backdrop-filter: blur(40px);
     margin: 0;
-    .button {
+button {
   transition-duration: 0.4s;
 }
 
-.button:hover {
+button:hover {
   background-color: #4CAF50; /* Green */
   color: rgb(245, 0, 0);
 }
-.button2:hover {box-shadow:0 8px 16px 0 rgba(0,0,0,0.6)}
+button:hover {box-shadow:0 8px 16px 0 rgba(0,0,0,0.6)}
 }
