@@ -10,12 +10,39 @@ header{
 
 }
 
-.btn3::before{
-    transform:skewX(-30deg);
+/* 1. Classe base do botão */
+.btn3 {
+  position: relative;     /* Necessário para posicionar o brilho dentro dele */
+  overflow: hidden;      /* Esconde o brilho quando ele estiver fora do botão */
+  display: inline-block; /* Garante que o botão respeite larguras e alturas */
+  padding: 12px 24px;    /* Ajuste o tamanho conforme seu layout */
+  cursor: pointer;
 }
-.btn3:hover::before{
-    left:100%
+
+
+.btn3::before {
+  content: '';           /* Obrigatório para o pseudoelemento existir */
+  position: absolute;    /* Posicionamento livre dentro do botão */
+  top: 0;
+  left: -50%;            /* Começa escondido à esquerda, fora do botão */
+  width: 30%;            /* Largura da linha de brilho */
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5); /* Cor do brilho (branco semi-transparente) */
+  
+  /* Seu código original */
+  transform: skewX(-30deg); 
+  
+  /* Transição suave para o movimento */
+  transition: left 0.5s ease; 
 }
+
+/* 3. Efeito ao passar o mouse (hover) */
+.btn3:hover::before {
+  /* Seu código original */
+  left: 150%;            /* Move o brilho totalmente para a direita */
+}
+
+
 
 
 main{
