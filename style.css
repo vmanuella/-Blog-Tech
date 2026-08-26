@@ -20,7 +20,7 @@ main{
    display: flex;
 }
 
-div p{
+.artigo-autor{
     font-weight: bold;
 }
 
