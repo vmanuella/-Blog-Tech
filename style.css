@@ -111,11 +111,3 @@ article{
     color: #ffffff;     
     box-shadow: 0 8px 16px 0 rgba(114, 114, 114, 0.6);
 }
-
-.retangulo {
-  width: 100px;         /* Largura do retângulo */
-  height: 10px;         /* Altura do retângulo */
-  background-color: #3498db; /* Cor do retângulo */
-  margin-top: 8px;      /* Espaçamento em relação ao parágrafo acima */
-  border-radius: 4px;   /* Opcional: cantos arredondados */
-}
