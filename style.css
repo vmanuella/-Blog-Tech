@@ -53,9 +53,9 @@ main {
 }
 
 .button-1:hover {
-    background-color: #4CAF50; /* Verde */
-    color: rgb(245, 0, 0);     /* Vermelho */
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+    background-color: #183C63; 
+    color: #ffff;     
+    box-shadow: 0 8px 16px 0 rgba(114, 114, 114, 0.6);
 }
 
 .button-2 {
@@ -63,7 +63,7 @@ main {
     height: 50px;
     padding: 10px;
     border: 5px solid #183C63;
-    border-radius: 10px;
+    border-radius: 15px;
     margin: 0;
     transition-duration: 0.4s;
     box-sizing: border-box;
@@ -72,18 +72,9 @@ main {
     align-items: center;
     justify-content: center;
     gap: 8px;
-
-    width: 100px;
-    height: 50px;
-    padding: 10px;
-    border: 5px solid #183C63;
-    border-radius: 15px;
-    margin: 0;
-    transition-duration: 0.4s;
 }
-
 .button-2:hover {
-    background-color: #4CAF50; /* Verde */
-    color: rgb(245, 0, 0);     /* Vermelho */
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+    background-color: #183C63; 
+    color: #ffff;     
+    box-shadow: 0 8px 16px 0 rgba(114, 114, 114, 0.6);
 }
