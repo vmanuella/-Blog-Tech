@@ -53,8 +53,8 @@ main {
 }
 
 .button-1:hover {
-     background-color: #183C63; 
-    color: #ffff;     
+     background-color: #ffffff; 
+    color: #183C63;     
     box-shadow: 0 8px 16px 0 rgba(114, 114, 114, 0.6);
 }
 
@@ -75,7 +75,7 @@ main {
 }
 
 .button-2:hover {
-     background-color: #183C63; 
-    color: #ffff;     
+     background-color: #ffffff; 
+    color: #183C63;     
     box-shadow: 0 8px 16px 0 rgba(114, 114, 114, 0.6);
 }
