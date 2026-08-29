@@ -4,8 +4,8 @@
     --cor-titulo: #FFDD00;
     --cor-fundo: #ffff;
     --cor-texto: #183C63;
-    --cor-contraste: #e4d3d3;
-    --cor-botao: #e5e74b;
+    --cor-contraste: #FFDD00;
+    --cor-botao: #0000;
 }
 
 .tema-escuro{
@@ -33,6 +33,10 @@ header {
     backdrop-filter: blur(40px);
     border: 1px solid rgba(32, 15, 15, 0.2);
 
+}
+
+p{
+ color: var(--cor-texto)
 }
 
 h1{
