@@ -7,6 +7,7 @@
     --cor-contraste: #FFDD00;
     --cor-botao: #0000;
     --fonte-texto: 'Segoe UI', sans-serif;
+    --sombra-hover: rgba(14, 84, 150, 0.4);
 }
 
 .tema-escuro{
@@ -17,6 +18,7 @@
     --cor-texto: #FFDD00;
     --cor-contraste: #0000;
     --cor-botao: #e5e74b;
+    --sombra-hover: rgba(255, 221, 0, 0.4);
 }
 
 .tema-escuro p{
@@ -102,8 +104,43 @@ article {
     align-items: center;
     text-align: center;
     justify-content: center;
+
+    border: 2px solid var(--cor-primairia);
+    border-radius: 20px; /* Bordas arredondadas */
+    
+    margin: 16px;
+    padding: 24px;
+    gap: 16px;
+    flex: 1 1 300px; /* Garante tamanho uniforme */
+    max-width: 380px;
+
+    background-color: transparent;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
 }
 
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px var(--sombra-hover); /* Sombra Azul */
+}
+
+/* Interação do Card no Modo Escuro */
+.tema-escuro article:hover {
+    box-shadow: 0 10px 20px var(--sombra-hover); /* Sombra Amarela */
+}
+
+/* INTERAÇÃO NAS IMAGENS */
+article img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+article:hover img.imagem-logo,
+article:hover img.imagem-html,
+article:hover img.imagem-css,
+article:hover img.imagem-js,
+article:hover img.imagem-py {
+    transform: scale(1.1); /* Zoom ao passar o mouse */
+}
 .artigo-autor {
     font-weight: bold;
 }
