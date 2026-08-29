@@ -1,54 +1,35 @@
-:root {
+:root{
     --cor-primairia: #183C63;
-    --cor-secundaria: #ffffff;
+    --cor-secundaria: #ffff;
     --cor-titulo: #183C63;
-    --cor-fundo: #ffffff;
+    --cor-fundo: #ffff;
     --cor-texto: #183C63;
     --cor-contraste: #FFDD00;
-    --cor-botao: transparent;
+    --cor-botao: #0000;
     --fonte-texto: 'Segoe UI', sans-serif;
     --sombra-hover: rgba(14, 84, 150, 0.4);
 }
 
-.tema-escuro {
+.tema-escuro{
     --cor-primairia: #FFDD00;
-    --cor-secundaria: #ffffff;
+    --cor-secundaria: #0000;
     --cor-titulo: #FFDD00;
     --cor-fundo: #2e2e2e;
     --cor-texto: #FFDD00;
-    --cor-contraste: #2e2e2e;
+    --cor-contraste: #0000;
     --cor-botao: #e5e74b;
     --sombra-hover: rgba(255, 221, 0, 0.4);
 }
 
-/* TODOS OS PARÁGRAFOS EM BRANCO */
-p {
-    color: #ffffff;
-}
-
-.tema-escuro p {
+.tema-escuro p{
     color: var(--cor-secundaria);
 }
 
-/* TÍTULOS H2 EM NEGRITO E DESTACADOS */
-h2 {
-    font-weight: 800;
-    font-size: 1.6rem;
-    color: var(--cor-primairia);
-    letter-spacing: 0.5px;
-    margin-bottom: 8px;
-    text-transform: uppercase;
-}
 
-.tema-escuro h2 {
-    color: var(--cor-titulo);
-}
 
 body {
     max-width: 100vw;
     font-family: var(--fonte-texto);
-    margin: 0;
-    background-color: var(--cor-fundo);
 }
 
 header {
@@ -60,27 +41,29 @@ header {
     border-radius: 30px;
     backdrop-filter: blur(40px);
     border: 1px solid rgba(32, 15, 15, 0.2);
+
 }
 
-.subtitulo {
-    color: var(--cor-primairia);
+.subtitulo{
+ color: var(--cor-primairia)
 }
 
-h1 {
-    position: relative;
-    display: inline-block;
-    font-size: 70px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
-    letter-spacing: 2px;
-    color: transparent;
-    -webkit-text-stroke: 2px var(--cor-titulo);
-    cursor: pointer;
-    white-space: nowrap;
-    user-select: none;
+h1{
+   position: relative;
+   display: inline-block;
+   font-size: 70px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 800;
+   letter-spacing: 2px;
+   color: transparent;
+   -webkit-text-stroke: 2px var(--cor-titulo) ;
+   cursor: pointer;
+   white-space: nowrap;
+   user-select: none;
+
 }
 
-h1::before {
+h1::before{
     content: attr(data-text);
     position: absolute;
     left: 0;
@@ -93,7 +76,7 @@ h1::before {
     transition: 0.5s ease;
 }
 
-h1:hover::before {
+h1:hover::before{
     width: 100%;
 }
 
@@ -103,25 +86,27 @@ main {
     margin: 0 auto;
     padding: 16px;
     gap: 16px;
+
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 article {
     display: flex;
+    border: 1px solid var(--cor-primairia);
+    
     flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: center;
 
     border: 2px solid var(--cor-primairia);
-    border-radius: 20px;
+    border-radius: 20px; /* Bordas arredondadas */
     
     margin: 16px;
     padding: 24px;
     gap: 16px;
-    flex: 1 1 300px;
+    flex: 1 1 300px; /* Garante tamanho uniforme */
     max-width: 380px;
 
     background-color: transparent;
@@ -131,13 +116,15 @@ article {
 
 article:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px var(--sombra-hover);
+    box-shadow: 0 10px 20px var(--sombra-hover); /* Sombra Azul */
 }
 
+/* Interação do Card no Modo Escuro */
 .tema-escuro article:hover {
-    box-shadow: 0 10px 20px var(--sombra-hover);
+    box-shadow: 0 10px 20px var(--sombra-hover); /* Sombra Amarela */
 }
 
+/* INTERAÇÃO NAS IMAGENS */
 article img {
     transition: transform 0.3s ease, filter 0.3s ease;
 }
@@ -147,9 +134,8 @@ article:hover img.imagem-html,
 article:hover img.imagem-css,
 article:hover img.imagem-js,
 article:hover img.imagem-py {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Zoom ao passar o mouse */
 }
-
 .artigo-autor {
     font-weight: bold;
 }
@@ -158,21 +144,38 @@ article:hover img.imagem-py {
     width: 80px;
     height: 80px;
     filter: drop-shadow(0px 0px 12px grey);
-    border-radius: 50%;
+    border-radius: 55%;
     object-fit: cover;
 }
 
-.imagem-html,
-.imagem-css,
-.imagem-js,
-.imagem-py {
+.imagem-html{
+    width: 55px;
+    height: 55px;
     filter: drop-shadow(0px 0px 12px grey);
     margin-right: 15px;
 }
 
-.imagem-html, .imagem-css { width: 55px; height: 55px; }
-.imagem-js { width: 50px; height: 50px; }
-.imagem-py { width: 45px; height: 45px; }
+.imagem-css{
+    width: 55px;
+    height: 55px;
+    filter: drop-shadow(0px 0px 12px grey);
+    margin-right: 15px;
+}
+
+.imagem-js{
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(0px 0px 12px grey);
+    margin-right: 15px;
+}
+
+.imagem-py{
+    width: 45px;
+    height: 45px;
+    filter: drop-shadow(0px 0px 12px grey);
+    margin-right: 15px;
+}
+
 
 .imagem-coracao,
 .imagem-polegar {
@@ -180,46 +183,58 @@ article:hover img.imagem-py {
     height: 20px;
 }
 
-.button-1,
-.button-2 {
-    width: 60px;
-    height: 32px;
-    padding: 6px 12px;
-    border: 2px solid var(--cor-primairia);
-    border-radius: 8px;
-    margin: 4px;
-    transition: all 0.4s ease;
+
+
+.button-1 {
+    width: 50px;
+    height: 25px;
+    padding: 10px;
+    border: 2px solid #183C63;
+    border-radius: 5px;
+    margin: 0;
+    transition-duration: 0.4s;
     box-sizing: border-box;
     cursor: pointer;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
-    background-color: transparent;
-    color: var(--cor-primairia);
 }
 
 .button-1:hover {
     background-color: #183c63; 
-    color: #ffffff;     
+    color: #ffff;     
     box-shadow: 0 8px 16px 0 #FFDD00;
 }
 
-.button-2:hover {
+.button-2 {
+    width: 50px;
+    height: 25px;
+    padding: 10px;
+    border: 2px solid #183C63;
+    border-radius: 5px;
+    margin: 0;
+    transition-duration: 0.4s;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.button-2:hover{
     background-color: #183c63; 
-    color: rgba(255, 255, 255, 0.75);     
+    color: #ffffff75;     
     box-shadow: 0 8px 16px 0 #FFDD00;
 }
 
-.btn-tema-escuro {
-    position: fixed;
+.btn-tema-escuro{
+    position:fixed;
     bottom: 16px;
     right: 16px;
     font-size: 32px;
     padding: 12px;
     background-color: var(--cor-primairia);
     border-radius: 50%;
-    border: none;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
