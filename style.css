@@ -21,7 +21,7 @@ h1{
    font-weight: 800;
    letter-spacing: 2px;
    color: transparent;
-   -webkit-text-stroke: 2px #4FE2FF ;
+   -webkit-text-stroke: 2px #FFDD00 ;
    cursor: pointer;
    white-space: nowrap;
    user-select: none;
@@ -36,8 +36,8 @@ h1::before{
     width: 0%;
     white-space: nowrap;
     overflow: hidden;
-    -webkit-text-stroke: 2px #4FE2FF ;
-    color: #4FE2FF;
+    -webkit-text-stroke: 2px #FFDD00 ;
+    color: #FFDD00;
     transition: 0.5s ease;
 }
 
