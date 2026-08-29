@@ -188,6 +188,13 @@ article {
     gap: 8px;
 }
 
+.button-2:hover {
+    background-color: #183c632f; 
+    color: #ffffff;     
+    box-shadow: 0 8px 16px 0 rgba(114, 114, 114, 0.6);
+}
+
+
 
 .btn-tema-escuro {
     position: fixed;
