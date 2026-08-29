@@ -12,7 +12,7 @@
 
 .tema-escuro{
     --cor-primairia: #FFDD00;
-    --cor-secundaria: #0000;
+    --cor-secundaria: #ffff;
     --cor-titulo: #FFDD00;
     --cor-fundo: #2e2e2e;
     --cor-texto: #FFDD00;
@@ -56,7 +56,7 @@ h1{
    font-weight: 800;
    letter-spacing: 2px;
    color: transparent;
-   -webkit-text-stroke: 2px var(--cor-titulo) ;
+   -webkit-text-stroke: 2px var(--cor-primairia) ;
    cursor: pointer;
    white-space: nowrap;
    user-select: none;
@@ -136,6 +136,7 @@ article:hover img.imagem-js,
 article:hover img.imagem-py {
     transform: scale(1.1); /* Zoom ao passar o mouse */
 }
+
 .artigo-autor {
     font-weight: bold;
 }
@@ -184,7 +185,6 @@ article:hover img.imagem-py {
 }
 
 
-
 .button-1 {
     width: 50px;
     height: 25px;
@@ -225,7 +225,7 @@ article:hover img.imagem-py {
 
 .button-2:hover{
     background-color: #183c63; 
-    color: #ffffff75;     
+    color: #ffff;     
     box-shadow: 0 8px 16px 0 #FFDD00;
 }
 
