@@ -1,6 +1,7 @@
 :root{
     --cor-primairia: #183C63;
     --cor-secundaria: #ffff;
+    --cor-titulo: #FFDD00;
     --cor-fundo: #ffff;
     --cor-texto: #183C63;
     --cor-contraste: #e4d3d3;
@@ -10,6 +11,7 @@
 .tema-escuro{
     --cor-primairia: #FFDD00;
     --cor-secundaria: #0000;
+    --cor-titulo: #183C63;
     --cor-fundo: #2e2e2e;
     --cor-texto: #183C63;
     --cor-contraste: #0000;
@@ -41,7 +43,7 @@ h1{
    font-weight: 800;
    letter-spacing: 2px;
    color: transparent;
-   -webkit-text-stroke: 2px #FFDD00 ;
+   -webkit-text-stroke: 2px var(--cor-titulo) ;
    cursor: pointer;
    white-space: nowrap;
    user-select: none;
