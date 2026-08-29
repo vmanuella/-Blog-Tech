@@ -200,7 +200,15 @@ article {
     right: 16px;
     font-size: 32px;
     padding: 12px;
-    background-color: var(--cor-primairia);
+    background-color: transparent;
     border-radius: 50%;
-    
+}
+
+.btn-tema-escuro::before {
+    transform: skewX(-30deg);
+    color: #183C63;
+}
+
+.btn-tema-escuro:hover::before{ 
+    left: 100%;
 }
