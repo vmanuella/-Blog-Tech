@@ -58,8 +58,8 @@ h1::before{
     width: 0%;
     white-space: nowrap;
     overflow: hidden;
-    -webkit-text-stroke: 2px var(--cor-titulo) ;
-    color: var(--cor-titulo);
+    -webkit-text-stroke: 2px var(--cor-texto) ;
+    color: var(--cor-texto);
     transition: 0.5s ease;
 }
 
