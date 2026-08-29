@@ -137,6 +137,11 @@ article {
     margin-right: 15px;
 }
 
+.dia-noite{
+    width: 16px;
+    height: 16px;
+}
+
 .imagem-coracao,
 .imagem-polegar {
     width: 20px;
@@ -188,7 +193,7 @@ article {
     gap: 8px;
 }
 
-.button-1:hover{
+.button-2:hover{
     background-color: #183c632f; 
     color: #0000;     
     box-shadow: 0 8px 16px 0 rgba(114, 114, 114, 0.6);
@@ -211,4 +216,5 @@ article {
 
 .btn-tema-escuro:hover::before{ 
     left: 100%;
+    color: #FFDD00;
 }
