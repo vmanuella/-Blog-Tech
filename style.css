@@ -1,6 +1,6 @@
 :root{
-    --cor-primairia: #183C63;
-    --cor-secundaria: #ffff;
+    --cor-primairia: hsl(211, 61%, 24%);
+    --cor-secundaria: #0000;
     --cor-titulo: #183C63;
     --cor-fundo: #ffff;
     --cor-texto: #183C63;
@@ -12,33 +12,20 @@
 
 .tema-escuro{
     --cor-primairia: #FFDD00;
-    --cor-secundaria: #0000;
+    --cor-secundaria: #ffff;
     --cor-titulo: #FFDD00;
     --cor-fundo: #2e2e2e;
     --cor-texto: #FFDD00;
-    --cor-contraste: #183C63;
+    --cor-contraste: #0000;
     --cor-botao: #e5e74b;
     --sombra-hover: rgba(255, 221, 0, 0.4);
 }
 
-p {
-    color: #ffffff;
-}
-
 .tema-escuro p{
-    color: #ffffff;
+    color: var(--cor-secundaria);
 }
 
-h2 {
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: var(--cor-primairia);
-    margin-bottom: 8px;
-}
 
-.tema-escuro h2 {
-    color: var(--cor-titulo);
-}
 
 body {
     max-width: 100vw;
@@ -54,24 +41,27 @@ header {
     border-radius: 30px;
     backdrop-filter: blur(40px);
     border: 1px solid rgba(32, 15, 15, 0.2);
+
 }
 
 .subtitulo{
-    color: var(--cor-primairia);
+ color: var(--cor-contraste);
+ 
 }
 
 h1{
-    position: relative;
-    display: inline-block;
-    font-size: 70px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
-    letter-spacing: 2px;
-    color: transparent;
-    -webkit-text-stroke: 2px var(--cor-contraste);
-    cursor: pointer;
-    white-space: nowrap;
-    user-select: none;
+   position: relative;
+   display: inline-block;
+   font-size: 70px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 800;
+   letter-spacing: 2px;
+   color: transparent;
+   -webkit-text-stroke: 2px var(--cor-primairia) ;
+   cursor: pointer;
+   white-space: nowrap;
+   user-select: none;
+
 }
 
 h1::before{
@@ -82,8 +72,8 @@ h1::before{
     width: 0%;
     white-space: nowrap;
     overflow: hidden;
-    -webkit-text-stroke: 2px var(--cor-contraste); 
-    color: var(--cor-contraste); 
+    -webkit-text-stroke: 2px var(--cor-primairia); 
+    color: var(--cor-primairia); 
     transition: 0.5s ease;
 }
 
@@ -97,23 +87,29 @@ main {
     margin: 0 auto;
     padding: 16px;
     gap: 16px;
+
     display: flex;
     flex-wrap: wrap;
 }
 
 article {
     display: flex;
+    border: 1px solid var(--cor-primairia);
+    
     flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: center;
+
     border: 2px solid var(--cor-primairia);
-    border-radius: 20px;
+    border-radius: 20px; 
+    
     margin: 16px;
     padding: 24px;
     gap: 16px;
-    flex: 1 1 300px;
+    flex: 1 1 300px; 
     max-width: 380px;
+
     background-color: transparent;
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
     cursor: pointer;
@@ -121,12 +117,14 @@ article {
 
 article:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px var(--sombra-hover);
+    box-shadow: 0 10px 20px var(--sombra-hover); 
 }
+
 
 .tema-escuro article:hover {
     box-shadow: 0 10px 20px var(--sombra-hover);
 }
+
 
 article img {
     transition: transform 0.3s ease, filter 0.3s ease;
@@ -137,7 +135,7 @@ article:hover img.imagem-html,
 article:hover img.imagem-css,
 article:hover img.imagem-js,
 article:hover img.imagem-py {
-    transform: scale(1.1);
+    transform: scale(1.1); 
 }
 
 .artigo-autor {
@@ -180,11 +178,13 @@ article:hover img.imagem-py {
     margin-right: 15px;
 }
 
+
 .imagem-coracao,
 .imagem-polegar {
     width: 20px;
     height: 20px;
 }
+
 
 .button-1 {
     width: 50px;
@@ -226,7 +226,7 @@ article:hover img.imagem-py {
 
 .button-2:hover{
     background-color: #183c63; 
-    color: #ffffff;     
+    color: #ffff;     
     box-shadow: 0 8px 16px 0 #FFDD00;
 }
 
