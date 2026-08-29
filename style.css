@@ -50,6 +50,7 @@ header {
     transition: color 0.5s ease;
 }
 
+
 h1 {
     position: relative;
     display: inline-block;
@@ -58,7 +59,7 @@ h1 {
     font-weight: 800;
     letter-spacing: 2px;
     color: transparent;
-    -webkit-text-stroke: 2px var(--cor-contraste);
+    -webkit-text-stroke: 2px var(--cor-primairia);
     cursor: pointer;
     white-space: nowrap;
     user-select: none;
@@ -73,8 +74,8 @@ h1::before {
     width: 0%;
     white-space: nowrap;
     overflow: hidden;
-    -webkit-text-stroke: 2px var(--cor-primairia); 
-    color: var(--cor-primairia); 
+    -webkit-text-stroke: 2px var(--cor-contraste); 
+    color: var(--cor-contraste); 
     transition: width 0.5s ease, color 0.5s ease, -webkit-text-stroke 0.5s ease;
 }
 
@@ -82,9 +83,8 @@ h1:hover::before {
     width: 100%;
 }
 
-/* Regra explícita para o Modo Escuro */
 .tema-escuro h1 {
-    -webkit-text-stroke: 2px var(--cor-contraste);
+    -webkit-text-stroke: 2px var(--cor-primairia);
 }
 
 .tema-escuro h1::before {
