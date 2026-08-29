@@ -46,6 +46,7 @@ header {
 
 .subtitulo{
  color: var(--cor-contraste);
+ font-size: medium;
  
 }
 
