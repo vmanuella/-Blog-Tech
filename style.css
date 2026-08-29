@@ -30,7 +30,7 @@ h1{
 }
 
 h1::before{
-    content: attr(h1);
+    content: attr(data-text);
     position: absolute;
     left: 0;
     top: 0;
