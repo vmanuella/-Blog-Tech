@@ -145,8 +145,8 @@ article {
 }
 
 .dia-noite{
-    width: 10px;
-    height: 10px;
+    width: 30px;
+    height: 30px;
     filter: drop-shadow(0px 0px 12px grey);
     margin-right: 15px;
 }
@@ -170,7 +170,7 @@ article {
 .button-1:hover {
     background-color: #183c632f; 
     color: #0000;     
-    box-shadow: 0 8px 16px 0 rgba(114, 114, 114, 0.6);
+    box-shadow: 0 8px 16px 0 #FFDD00;
 }
 
 .button-2 {
@@ -190,9 +190,9 @@ article {
 }
 
 .button-2:hover{
-    background-color: #183c632f; 
+    background-color: #183c635e; 
     color: #0000;     
-    box-shadow: 0 8px 16px 0 rgba(114, 114, 114, 0.6);
+    box-shadow: 0 8px 16px 0 #FFDD00;
 }
 
 .btn-tema-escuro{
