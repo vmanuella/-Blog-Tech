@@ -195,7 +195,7 @@ article {
     font-size: 32px;
     padding: 12px;
     background-color: var(--cor-primairia);
-    border-radius: 100%;
+    border-radius: 30%;
 }
 
 .btn-tema-escuro::before{
