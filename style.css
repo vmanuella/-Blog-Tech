@@ -188,19 +188,29 @@ article {
     gap: 8px;
 }
 
-.btn-tema-escuro{
-    position:fixed;
+.btn-tema-escuro {
+    position: fixed;
     bottom: 16px;
     right: 16px;
     font-size: 32px;
     padding: 12px;
     background-color: var(--cor-primairia);
     border-radius: 30%;
+    overflow: hidden; /* Garante que o efeito não passe dos limites do botão */
 }
 
-.btn-tema-escuro::before{
+.btn-tema-escuro::before {
+    content: ""; /* Obrigatório para o pseudoelemento aparecer */
+    position: absolute;
+    top: 0;
+    left: -100%; /* Posição inicial fora do botão à esquerda */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3); /* Cor do brilho/efeito */
     transform: skewX(-30deg);
+    transition: left 0.5s ease; /* Anima a movimentação */
 }
-.btn-tema-escuro:hover::before{
-    left: 100%;
+
+.btn-tema-escuro:hover::before {
+    left: 100%; /* Move o brilho para fora do botão à direita */
 }
