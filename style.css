@@ -137,10 +137,6 @@ article {
     margin-right: 15px;
 }
 
-.dia-noite{
-    width: 16px;
-    height: 16px;
-}
 
 .imagem-coracao,
 .imagem-polegar {
@@ -149,8 +145,8 @@ article {
 }
 
 .dia-noite{
-    width: 50px;
-    height: 50px;
+    width: 10px;
+    height: 10px;
     filter: drop-shadow(0px 0px 12px grey);
     margin-right: 15px;
 }
