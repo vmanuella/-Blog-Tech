@@ -35,7 +35,7 @@ header {
 
 }
 
-p{
+.subtitulo{
  color: var(--cor-texto)
 }
 
