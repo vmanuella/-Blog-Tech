@@ -1,5 +1,5 @@
 :root{
-    --cor-primairia: hsl(211, 61%, 24%);
+    --cor-primairia: #183c63;
     --cor-secundaria: #0000;
     --cor-titulo: #183C63;
     --cor-fundo: #ffff;
@@ -26,7 +26,6 @@
 }
 
 
-
 body {
     max-width: 100vw;
     font-family: var(--fonte-texto);
@@ -46,9 +45,7 @@ header {
 
 .subtitulo {
     color: var(--cor-contraste);
-    font-size: medium;
-    transition: color 0.5s ease;
-}
+    font-size: medium;}
 
 
 h1 {
@@ -59,7 +56,7 @@ h1 {
     font-weight: 800;
     letter-spacing: 2px;
     color: transparent;
-    -webkit-text-stroke: 2px var(--cor-primairia);
+    -webkit-text-stroke: 2px var(--cor-contraste);
     cursor: pointer;
     white-space: nowrap;
     user-select: none;
