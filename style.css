@@ -181,25 +181,3 @@ article {
     gap: 8px;
 }
 
-.button-2:hover {
-     background-color: #183c632f; 
-    color: #ffffff;     
-    box-shadow: 0 8px 16px 0 rgba(114, 114, 114, 0.6);
-}
-
-.premium-toogle{
-    width: 190px; height: 92px;
-    background: 
-     linear-gradient(145deg, #f8f8f8, #d9d9d9);
-}
-
-.premium-toogle::before{
-    box-shadow: inset 7px 7px 12px rgba(0, 0, 0, .16)
-     inset -6px -6px 12px rgba(255, 255, 255, .9);
-}
-
-.blob{
-    width: 66px; height: 66px;
-    background: linear-gradient(145deg, #ffc85a, #edb800);
-    box-shadow: 7px, 9px, 12px rgba(0, 0, 0, .25);
-}
