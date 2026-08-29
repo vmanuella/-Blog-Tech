@@ -11,9 +11,9 @@
 .tema-escuro{
     --cor-primairia: #FFDD00;
     --cor-secundaria: #0000;
-    --cor-titulo: #183C63;
+    --cor-titulo: #FFDD00;
     --cor-fundo: #2e2e2e;
-    --cor-texto: #183C63;
+    --cor-texto: #FFDD00;
     --cor-contraste: #0000;
     --cor-botao: #e5e74b;
 }
@@ -62,8 +62,8 @@ h1::before{
     width: 0%;
     white-space: nowrap;
     overflow: hidden;
-    -webkit-text-stroke: 2px var(--cor-texto) ;
-    color: var(--cor-texto);
+    -webkit-text-stroke: 2px var(--cor-titulo); 
+    color: var(--cor-titulo); 
     transition: 0.5s ease;
 }
 
@@ -144,8 +144,8 @@ article {
 }
 
 .dia-noite{
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     filter: drop-shadow(0px 0px 12px grey);
     margin-right: 15px;
 }
@@ -168,7 +168,7 @@ article {
 
 .button-1:hover {
     background-color: #183c632f; 
-    color: #0000;     
+    color: #ffffff;     
     box-shadow: 0 8px 16px 0 rgba(114, 114, 114, 0.6);
 }
 
@@ -188,37 +188,19 @@ article {
     gap: 8px;
 }
 
-.button-2:hover {
+.button-1:hover{
     background-color: #183c632f; 
-    color: #0000;     
+    color: #ffffff;     
     box-shadow: 0 8px 16px 0 rgba(114, 114, 114, 0.6);
 }
 
-
-
-.btn-tema-escuro {
-    position: fixed;
+.btn-tema-escuro{
+    position:fixed;
     bottom: 16px;
     right: 16px;
     font-size: 32px;
     padding: 12px;
     background-color: var(--cor-primairia);
-    border-radius: 30%;
-    overflow: hidden; /* Garante que o efeito não passe dos limites do botão */
-}
-
-.btn-tema-escuro::before {
-    content: ""; /* Obrigatório para o pseudoelemento aparecer */
-    position: absolute;
-    top: 0;
-    left: -100%; /* Posição inicial fora do botão à esquerda */
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.3); /* Cor do brilho/efeito */
-    transform: skewX(-30deg);
-    transition: left 0.5s ease; /* Anima a movimentação */
-}
-
-.btn-tema-escuro:hover::before {
-    left: 100%; /* Move o brilho para fora do botão à direita */
+    border-radius: 50%;
+    
 }
