@@ -1,7 +1,7 @@
 :root{
     --cor-primairia: #183C63;
     --cor-secundaria: #ffff;
-    --cor-titulo: #FFDD00;
+    --cor-titulo: #183C63;
     --cor-fundo: #ffff;
     --cor-texto: #183C63;
     --cor-contraste: #FFDD00;
@@ -43,7 +43,7 @@ header {
 }
 
 .subtitulo{
- color: var(--cor-titulo)
+ color: var(--cor-primairia)
 }
 
 h1{
@@ -69,8 +69,8 @@ h1::before{
     width: 0%;
     white-space: nowrap;
     overflow: hidden;
-    -webkit-text-stroke: 2px var(--cor-titulo); 
-    color: var(--cor-titulo); 
+    -webkit-text-stroke: 2px var(--cor-primairia); 
+    color: var(--cor-primairia); 
     transition: 0.5s ease;
 }
 
