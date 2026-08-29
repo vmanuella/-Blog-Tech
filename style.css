@@ -170,7 +170,7 @@ article {
 }
 
 .button-1:hover {
-    background-color: #183c632f; 
+    background-color: #183c63; 
     color: #ffff;     
     box-shadow: 0 8px 16px 0 #FFDD00;
 }
@@ -193,7 +193,7 @@ article {
 
 .button-2:hover{
     background-color: #183c635e; 
-    color: #ffff;     
+    color: #ffffff75;     
     box-shadow: 0 8px 16px 0 #FFDD00;
 }
 
