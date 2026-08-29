@@ -45,7 +45,9 @@ header {
 
 .subtitulo {
     color: var(--cor-contraste);
-    font-size: medium;}
+    font-size: medium;
+
+}
 
 
 h1 {
@@ -56,7 +58,7 @@ h1 {
     font-weight: 800;
     letter-spacing: 2px;
     color: transparent;
-    -webkit-text-stroke: 2px var(--cor-contraste);
+    -webkit-text-stroke: 2px #FFDD00; 
     cursor: pointer;
     white-space: nowrap;
     user-select: none;
@@ -71,9 +73,9 @@ h1::before {
     width: 0%;
     white-space: nowrap;
     overflow: hidden;
-    -webkit-text-stroke: 2px var(--cor-contraste); 
-    color: var(--cor-contraste); 
-    transition: width 0.5s ease, color 0.5s ease, -webkit-text-stroke 0.5s ease;
+    -webkit-text-stroke: 2px #FFDD00; 
+    color: #FFDD00;                 
+    transition: width 0.5s ease;
 }
 
 h1:hover::before {
@@ -81,12 +83,12 @@ h1:hover::before {
 }
 
 .tema-escuro h1 {
-    -webkit-text-stroke: 2px var(--cor-primairia);
+    -webkit-text-stroke: 2px #183C63; 
 }
 
 .tema-escuro h1::before {
-    -webkit-text-stroke: 2px var(--cor-fundo);
-    color: var(--cor-fundo);
+    -webkit-text-stroke: 2px #183C63; 
+    color: #183C63;                   
 }
 
 main {
